@@ -3,6 +3,10 @@
 ---------------------
 
 -- Set programs that you use
+-- set these to correct programs after install
+-- look at rofi for menu
+-- look at another file manager then dolphin
+-- swap kitty to alacritty
 local terminal    = "kitty"
 local fileManager = "dolphin"
 local menu        = "hyprlauncher"
@@ -19,9 +23,14 @@ hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+
+-- think about super+F for filemanager
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
-hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+-- hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+
+-- Super+R for rofi
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
+
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 
