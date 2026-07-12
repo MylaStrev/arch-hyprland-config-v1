@@ -53,12 +53,31 @@ for pkg in "${BASE_DEPEN[@]}"; do
     fi
 done
 
+# add base file system - docs, downloads, pics, etc..
+
 # hyperland setup
+# make hypr config file directory
 cd ~
+cd ~/.config
+mkdir hypr
+cd ~
+
+# copy main hypr config file
+cd ~/hypr-config/hypr
+cp hyprland.lua ~/hypr-config/hypr/ ~/home/.config/hypr
+
+# add in modules sub-directory with folders
+cd ~/home/.config/hypr
+mkdir /modules
+cd ~
+cp -R modules ~/hypr-config/hypr/modules ~/home/.config/hypr/modules
+
 ## add here "cd /to/download/location"
 ## add line here to run hyprland config setups
 
 # quickshell setup
 cd ~
+cd /quickshell
+sudo ./QS-install.sh
 ## add here "cd /to/download/location"
 ## add line here to run queckshell setup script
