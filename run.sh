@@ -53,6 +53,7 @@ for pkg in "${BASE_DEPEN[@]}"; do
     fi
 done
 
+# RUN COMMAND HERE TO MAKE HOME SUB-DIRECTORIES
 # add base file system - docs, downloads, pics, etc..
 
 # hyperland setup
