@@ -47,7 +47,9 @@ BASE_DEPEN=(
 
 # command calls
 YAY_INT='sudo yay -Sq --needed --noconfirm'
+PAC-INT='sudo pacman -Sq --needed --noconfirm'
 
+# ---- INSTALL PACKAGES ----
 echo "## INSTALLING YAY PACKAGES"
 for pkg in "${BASE_DEPEN[@]}"; do
     if yay -Qi "$pkg" &> /dev/null; then
@@ -59,7 +61,7 @@ for pkg in "${BASE_DEPEN[@]}"; do
 done
 
 
-
+# ---- HYPRLAND SETUP ----
 # hyperland setup
 # make hypr config file directory
 cd ~
@@ -80,6 +82,8 @@ cp -R modules ~/hypr-config/hypr/modules ~/home/.config/hypr/modules
 ## add here "cd /to/download/location"
 ## add line here to run hyprland config setups
 
+
+# ---- QUICKSHELL INSTALL AND SETUP ----
 # quickshell setup
 cd ~
 cd /quickshell
