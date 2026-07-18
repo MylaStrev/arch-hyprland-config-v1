@@ -1,0 +1,16 @@
+-- home directories --
+- package
+xdg-user-dirs
+
+- command
+run in terminal
+xdg-users-dirs-update
+
+
+-- git repo clone --
+- package
+git
+
+- commands
+cd /to/dir/where/wanted
+git clone https://github.com/MylaStrev/arch-hyprland-config-v1.git
