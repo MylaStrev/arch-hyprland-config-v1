@@ -13,4 +13,12 @@ git
 
 - commands
 cd /to/dir/where/wanted
-git clone https://github.com/MylaStrev/arch-hyprland-config-v1.git
+git clone https://github.com/MylaStrev/##repo-here##.git
+
+
+-- hyprland config changes --
+
+keybaord laybout change from us to gb 
+us - usa
+gb - grait britian
+
