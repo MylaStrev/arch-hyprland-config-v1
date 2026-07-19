@@ -1,6 +1,6 @@
 
 hl.config({
-    layout = "dwindle"
+    { layout = "dwindle" }
 })
 
 -- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
