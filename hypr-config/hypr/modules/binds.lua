@@ -6,8 +6,8 @@
 -- set these to correct programs after install
 -- look at rofi for menu
 -- look at another file manager then dolphin
--- swap kitty to alacritty
-local terminal    = "kitty"
+-- swap kitty to alacritty - DONE
+local terminal    = "alacritty"
 local fileManager = "dolphin"
 local menu        = "hyprlauncher"
 
@@ -29,6 +29,8 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 -- hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 
 -- Super+R for rofi
+-- new binds to be added or edited
+-- run rofi is ALT+SPACE
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
