@@ -6,7 +6,7 @@ ShellRoot {
         // this anchors to the top of screen
         // top to anchor it to the top of the screen
         // left and right to stretch the bar across the entire screen
-        anchor {
+        anchors {
             top: true
             left: true
             right: true
@@ -14,19 +14,11 @@ ShellRoot {
         // thickness of the bar in pixels
         implicitHeight: 30
         // colour of bar in hex code
-        color: "#f5e2c5"
+        color: '#ffffff'
 
-        // typeface section
-        font {
-            family: "mesloLGS"
-            letterSpacing: -1
-            pixelSize: 15 // font size
-            weight: 600
-        }
-
-        text {
+        Text {
             anchors.centerIn: parent
-            text: "hello world"
+            text: "hello, world"
         }
     }
 }
