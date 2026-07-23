@@ -11,7 +11,7 @@ ShellRoot {
             left: true
             right: true
         }
-        // thickness of the bar
+        // thickness of the bar in pixels
         implicitHeight: 30
         // colour of bar in hex code
         color: "#f5e2c5"
