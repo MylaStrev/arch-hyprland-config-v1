@@ -16,9 +16,15 @@ ShellRoot {
         // colour of bar in hex code
         color: '#ffffff'
 
+        
+        // this takes data from system clock and puts the clock on the top bar
         Text {
             anchors.centerIn: parent
-            text: "hello, world"
+            text: Qt.formatDateTime(clock.date, "hh:mm")
+        }
+        SystemClock {
+            id: clock
+            precision: SystemClock.Minutes
         }
     }
 }
